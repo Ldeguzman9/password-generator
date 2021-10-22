@@ -1,5 +1,14 @@
-// Assignment code here
-
+// Example code from Stackoverflow
+var generatePassword = function () {
+  var length = 8,
+    charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+    retVal = "";
+  for (var i = 0, n = charset.length; i < length; ++i) {
+    retVal += charset.charAt(Math.floor(Math.random() * n));
+  }
+  return retVal;
+};
+//End example code
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -10,8 +19,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+console.log(password);

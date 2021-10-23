@@ -100,10 +100,10 @@ var getUserInput = function () {
     alert("Please select a number between 8 and 128!");
     return false;
   }
-  if (typeof passwordLength != "number") {
-    alert("Please enter a valid number!");
-    return false;
-  }
+  // if (typeof passwordLength != "number") {
+  //   alert("Please enter a valid number!");
+  //   return false;
+  // }
 
   var passwordSpecialCharacters = window.confirm(
     "Would you like to use special characters in your password? [Select 'OK' for YES or 'Cancel' for NO]"

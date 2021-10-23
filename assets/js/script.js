@@ -97,7 +97,11 @@ var getUserInput = function () {
   );
   // check if numbers are empty valid
   if (passwordLength < 8 || passwordLength > 128) {
-    alert("You need to select a number between 8 and 128!");
+    alert("Please select a number between 8 and 128!");
+    return false;
+  }
+  if (typeof passwordLength != "number") {
+    alert("Please enter a valid number!");
     return false;
   }
 
@@ -107,17 +111,17 @@ var getUserInput = function () {
 
   //Does the password contain numbers?
   var passwordNumerics = window.confirm(
-    "Would you like to use numerics in your password? [Select 'OK' for YES or 'Cancel' for NO]"
+    "Would you like to use numbers in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   //Does the password contain uppercase letters?
   var passwordUpperCase = window.confirm(
-    "Would you like to use Uppercase in your password? [Select 'OK' for YES or 'Cancel' for NO]"
+    "Would you like to use uppercase letters in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   //Does the password contain lowercase letters?
   var passwordLowerCase = window.confirm(
-    "Would you like to use Lowercase in your password? [Select 'OK' for YES or 'Cancel' for NO]"
+    "Would you like to use lowercase letters in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   var userChoice = {

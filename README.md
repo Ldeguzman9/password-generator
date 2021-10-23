@@ -23,6 +23,6 @@ Through this generator you will be able to:
 - CSS
 - Javascript
 
-# Deployed Portfolio
+# Deployed Link
 
 https://ldeguzman9.github.io/password-generator/

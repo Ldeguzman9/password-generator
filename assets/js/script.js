@@ -1,3 +1,4 @@
+// Variables defined
 var numericCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialCharacters = [
   "@",
@@ -81,35 +82,42 @@ var upperCase = [
   "Z",
 ];
 
+// Randomize Array Function
 var randomizeArray = function (array) {
   var grabIndex = Math.floor(Math.random() * array.length);
   var indexValue = array[grabIndex];
   return indexValue;
 };
 
+// Prompts to gather user input
 var getUserInput = function () {
   //How many characters is the password?
   var passwordLength = window.prompt(
     "How many characters would you like your password to contain? [Choose a number between 8 and 128]"
   );
+  // check if numbers are empty valid
+  if (passwordLength < 8 || passwordLength > 128) {
+    alert("You need to select a number between 8 and 128!");
+    return false;
+  }
 
   var passwordSpecialCharacters = window.confirm(
-    "Would you like to use special characters in your password? [Type YES or NO]"
+    "Would you like to use special characters in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   //Does the password contain numbers?
   var passwordNumerics = window.confirm(
-    "Would you like to use numerics in your password? [Type YES or NO]"
+    "Would you like to use numerics in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   //Does the password contain uppercase letters?
   var passwordUpperCase = window.confirm(
-    "Would you like to use Uppercase in your password? [Type YES or NO]"
+    "Would you like to use Uppercase in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   //Does the password contain lowercase letters?
   var passwordLowerCase = window.confirm(
-    "Would you like to use Lowercase in your password? [Type YES or NO]"
+    "Would you like to use Lowercase in your password? [Select 'OK' for YES or 'Cancel' for NO]"
   );
 
   var userChoice = {
@@ -123,7 +131,7 @@ var getUserInput = function () {
   return userChoice;
 };
 
-// Example code from Stackoverflow
+// Password Generate Function
 var generatePassword = function () {
   var userOutput = getUserInput();
   var stagingArray = [];
@@ -155,7 +163,6 @@ var generatePassword = function () {
   console.log(newPassword);
   return newPassword.join("");
 };
-//End example code
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -170,5 +177,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-// Assignment code here //

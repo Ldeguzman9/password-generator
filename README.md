@@ -12,9 +12,15 @@ Through this generator you will be able to:
 4. Choose to have uppercase letters or not.
 5. Choose to have lowercase letters or not
 
+<<<<<<< HEAD
 - **Password Generator Interface:**
   ![Generator](https://github.com/Ldeguzman9/password-generator/blob/main/assets/images/PW%20Generator.png?raw=true)
 - **Password Generator Prompts:**
+=======
+- **Password Generator Interface:** 
+  ![Generator](https://github.com/Ldeguzman9/password-generator/blob/main/assets/images/PW%20Generator.png?raw=true)
+- **Password Generator Prompts:** 
+>>>>>>> 49e8ab5379040bf2e4afb6cd4990094d0f778210
   ![Prompts](https://github.com/Ldeguzman9/password-generator/blob/main/assets/images/PW%20generator%20prompts.png?raw=true)
 
 # Technical Skills

@@ -25,4 +25,4 @@ Through this generator you will be able to:
 
 # Deployed Portfolio
 
-https://ldeguzman9.github.io/Portfolio/
+https://ldeguzman9.github.io/password-generator/

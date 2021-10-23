@@ -12,12 +12,10 @@ Through this generator you will be able to:
 4. Choose to have uppercase letters or not.
 5. Choose to have lowercase letters or not
 
-- **Password Generator Interface:** Who am I? What do I do? Why I am unique?
+- **Password Generator Interface:** 
   ![Generator](https://github.com/Ldeguzman9/password-generator/blob/main/assets/images/PW%20Generator.png?raw=true)
-- **Password Generator Prompts:** A collection of projects I have worked on so far.
-  ![work](https://github.com/Ldeguzman9/Portfolio/blob/main/assets/images/projects%20.png?raw=true)
-- **Unique Password:** A collection of projects I have worked on so far.
-  ![work](https://github.com/Ldeguzman9/Portfolio/blob/main/assets/images/projects%20.png?raw=true)
+- **Password Generator Prompts:** 
+  ![Prompts](https://github.com/Ldeguzman9/password-generator/blob/main/assets/images/PW%20generator%20prompts.png?raw=true)
 
 # Technical Skills
 
